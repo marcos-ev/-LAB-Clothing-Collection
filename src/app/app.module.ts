@@ -14,8 +14,9 @@ import { RegistroComponent } from './registro/registro.component';
     AppComponent,
     SigninComponent,
     EsqueceuSenhaComponent,
-    RegistroComponent
+    RegistroComponent,    
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
