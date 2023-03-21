@@ -1,0 +1,35 @@
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css';
+
+
+
+
+
+.custom-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1rem;
+ }
+
+.custom-card {
+  position: relative;
+  width: 420px;
+  height: 350px;
+  margin: 0 auto 0 100% ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-card form {
+  margin-top: 35px;
+}
+
+.btn{
+  margin-top:2vh;
+  width: 100%;
+}
+
+
