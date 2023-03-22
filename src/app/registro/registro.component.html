@@ -4,7 +4,7 @@
       <div class="col-md-6 col-lg-4 ">
         <div class="card custom-card shadow-lg">
           <div class="card-body d-flex  flex-column">
-            <h2 class="text-center mb-4">Signup</h2>
+            <h2 class="text-center mb-4">Sign Up</h2>
             <p class="text-center" style="color:#505154;">Insira seus dados para criar uma conta</p>
             <form [formGroup]="registroForm" (ngSubmit)="onSubmit()">
               <div class="form-group my-2">
@@ -19,13 +19,15 @@
               <div class="form-group my-2">
                 <input type="email" class="form-control" formControlName="email" placeholder="Informe seu e-mail">
               </div>
-              <div class="form-group my-2">
-                <input type="password" class="form-control" formControlName="password" placeholder="Senha">
+              <div class="form-group row my-2">
+                <div class="col">
+                  <input type="password" class="form-control" formControlName="password" placeholder="Senha">
+                </div>
+                <div class="col">
+                  <input type="password" class="form-control" formControlName="confirmPassword" placeholder="Confirmar senha">
+                </div>
               </div>
-              <div class="form-group my-2">
-                <input type="password" class="form-control" formControlName="confirmPassword" placeholder="Confirmar senha">
-              </div>
-              <div class="form-group text-center">
+                <div class="form-group text-center">
                 <button type="submit" class="btn btn-primary btn-md" >Criar conta</button>
               </div>
             </form>
