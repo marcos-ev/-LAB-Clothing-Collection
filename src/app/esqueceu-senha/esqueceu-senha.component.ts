@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class EsqueceuSenhaComponent implements OnInit {
   recoveryForm: FormGroup;
+  emailSent: boolean = false;
 
   constructor(private formBuilder: FormBuilder, private router: Router) {
     this.recoveryForm = this.formBuilder.group({
@@ -20,8 +21,10 @@ export class EsqueceuSenhaComponent implements OnInit {
 
   onSubmit(): void {
     if (this.recoveryForm.valid) {
-      // Adicione aqui a lógica para enviar a solicitação de recuperação de senha
-      this.router.navigate(['/signin']);
+      // Simula envio de email
+      setTimeout(() => {
+        this.emailSent = true;
+      }, 2000);
     }
   }
 }
