@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   font-size: 1rem;
  }
 
@@ -27,5 +27,23 @@
   margin-top:2vh;
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  .col-md-6 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+   .custom-card {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .text-pass {
+    text-align: center;
+  }
+  .custom-card form {
+    margin-top: 15px;
+  }
+}
+
 
 
