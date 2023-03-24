@@ -1,6 +1,13 @@
 @import 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css';
 
+
+
 .dropdown-menu {
   right: 0;
   left: auto !important;
+}
+
+.header-logo {
+  max-width: 50px;
+  max-height: 50px;
 }

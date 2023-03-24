@@ -4,10 +4,32 @@
   background-color: #007bff;
   color: #fff;
 }
-.menu-lateral {
-  width: 330px;
-  height: 980px;
+.logo-audaces{
+  width: 200px
 }
 
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 280px;
+  background-color: #fff;
+  z-index: 1;
+}
 
+.menu-title {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin-bottom: 1rem;
+}
+
+.nav-link {
+  margin-bottom: 1rem;
+}
 
