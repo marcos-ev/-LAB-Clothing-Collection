@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { SigninComponent } from './signin/signin.component';
 import { EsqueceuSenhaComponent } from './esqueceu-senha/esqueceu-senha.component';
 import { RegistroComponent } from './registro/registro.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SigninComponent,
     EsqueceuSenhaComponent,
-    RegistroComponent    
+    RegistroComponent,
+    HeaderComponent    
   ],
   
   imports: [
