@@ -1,0 +1,13 @@
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css';
+
+.nav-link:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+.menu-lateral {
+  width: 330px;
+  height: 980px;
+}
+
+
+

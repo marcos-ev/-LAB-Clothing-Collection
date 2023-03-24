@@ -9,6 +9,7 @@ import { SigninComponent } from './signin/signin.component';
 import { EsqueceuSenhaComponent } from './esqueceu-senha/esqueceu-senha.component';
 import { RegistroComponent } from './registro/registro.component';
 import { HeaderComponent } from './header/header.component';
+import { MenuLateralComponent } from './menu-lateral/menu-lateral.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HeaderComponent } from './header/header.component';
     SigninComponent,
     EsqueceuSenhaComponent,
     RegistroComponent,
-    HeaderComponent    
+    HeaderComponent,
+    MenuLateralComponent    
   ],
   imports: [
     BrowserModule,
