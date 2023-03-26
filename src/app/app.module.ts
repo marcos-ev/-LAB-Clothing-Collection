@@ -10,6 +10,7 @@ import { EsqueceuSenhaComponent } from './esqueceu-senha/esqueceu-senha.componen
 import { RegistroComponent } from './registro/registro.component';
 import { HeaderComponent } from './header/header.component';
 import { MenuLateralComponent } from './menu-lateral/menu-lateral.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MenuLateralComponent } from './menu-lateral/menu-lateral.component';
     EsqueceuSenhaComponent,
     RegistroComponent,
     HeaderComponent,
-    MenuLateralComponent    
+    MenuLateralComponent,
+    DashboardComponent    
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,8 @@ import { MenuLateralComponent } from './menu-lateral/menu-lateral.component';
     ReactiveFormsModule,
     NgbModule
   ],
-  providers: [],
+  
+  providers: [{ provide: 'cache', useValue: false }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
