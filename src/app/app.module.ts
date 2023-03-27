@@ -21,7 +21,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     RegistroComponent,
     HeaderComponent,
     MenuLateralComponent,
-    DashboardComponent    
+    DashboardComponent,
+ 
   ],
   imports: [
     BrowserModule,

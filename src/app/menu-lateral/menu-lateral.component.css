@@ -2,6 +2,8 @@
 
 .nav-link {
   color: #6c757d;
+  font-size: 1.2rem;
+  
 }
 
 .nav-link:hover {
@@ -11,24 +13,26 @@
 
  
 .logo-audaces{
-  width: 200px
+  width: 200px;
+  margin-top: 2vh;
+
 }
 
 .menu-lateral {
   position: fixed;
+  box-shadow: -5px 0px 5px 2px rgba(0,0,0,0.75);
   top: 0;
   left: 0;
   bottom: 0;
-  width: 280px;
+  width: 330px;
   background-color: #fff;
   z-index: 1;
+  
 }
 
 .menu-title {
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 1.1rem;
+  margin-right: 10%;
 }
 
 .logo {

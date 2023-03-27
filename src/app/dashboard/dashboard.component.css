@@ -7,38 +7,56 @@
   overflow-y: hidden;
 }
 
-
 .dashboard {
- 
-  height: 100vh;
+  height: 93vh;
   background-color: #f3f3f3;
   overflow: hidden;
-  
 }
-
-
 
 .dashboard-cards {
-  margin-left: 280px; /* Desconta a largura do menu lateral */
+  margin-left: 330px; /* Desconta a largura do menu lateral */
+  margin-top: 80px; /* Define uma margem menor para alinhar com a tabela */
 }
+
 
 .card {
   margin: 10px;
   background-color: #fff;
-  
-  
+  margin-bottom: 20px; /* Adiciona margem inferior para alinhar com a tabela */
 }
 
+
 .card-title {
-  font-size: 1rem;
-  text-align: center;
+  font-size: 1.2rem;
+  text-align: left;
 }
 
 .card-text {
-  font-size: 1rem;
-  text-align: center;
+  font-size: 1.4rem;
+  padding: 10px;
+  text-align: left;
 }
 
 h2 {
+  font-size: 1.3rem;
+  margin-top: 3rem;
+}
+
+.tabela {
+  margin: 0 auto; /* centraliza a tabela */
+  max-width: 90%; /* limita a largura da tabela */
+  margin-bottom: 20px; /* Adiciona margem inferior para separar da seção anterior */
+}
+
+.table {
+  background-color: #fff;
+  margin-top: 20px;
+  
+}
+
+
+.titulo-tabela {
+  text-align: center; /* centraliza o título */
   font-size: 1.2rem;
+  margin-bottom: 10px; /* adiciona espaço abaixo do título */
 }

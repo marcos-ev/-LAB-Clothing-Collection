@@ -1,6 +1,9 @@
 @import 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css';
 
-
+.navbar {
+  height: 10vh;
+  box-shadow: 0px 5px 15px -5px #888;
+}
 
 .dropdown-menu {
   right: 0;

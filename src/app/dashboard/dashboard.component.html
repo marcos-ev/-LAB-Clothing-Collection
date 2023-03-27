@@ -1,8 +1,7 @@
 <app-header></app-header>
 <app-menu-lateral></app-menu-lateral>
 
-<!-- dashboard.component.html -->
-<div class="dashboard mt-5 dashboard-cards">
+<div class="dashboard mt-0 dashboard-cards">
   <div class="col-md-12 mb-5">
     <h2 class="text-left">DASHBOARD</h2>
   </div>
@@ -11,7 +10,7 @@
       <div class="card">
         <div class="card-body">
           <h5 class="card-title fs-5">Coleções</h5>
-          <p class="card-text"><strong class="fs-5">10</strong></p>
+          <p class="card-text"><strong class="fs-5">{{ totalColecoes }}</strong></p>
         </div>
       </div>
     </div>
@@ -19,7 +18,7 @@
       <div class="card">
         <div class="card-body">
           <h5 class="card-title fs-5">Modelos</h5>
-          <p class="card-text"><strong class="fs-5">5</strong></p>
+          <p class="card-text"><strong class="fs-5">{{ totalModelos }}</strong></p>
         </div>
       </div>
     </div>
@@ -27,9 +26,32 @@
       <div class="card">
         <div class="card-body">
           <h5 class="card-title fs-5">Orçamento médio (R$)</h5>
-          <p class="card-text"><strong class="fs-5">R$ 500,00</strong></p>
+          <p class="card-text"><strong class="fs-5">R$ {{ orcamentoMedio }}</strong></p>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="tabela mt-5">
+    <h3>Maiores orçamentos</h3>
+    <table class="table table-striped bg-white">
+      <thead>
+        <tr>
+          <th>Coleção</th>
+          <th>Responsável</th>
+          <th>Modelos</th>
+          <th>Orçamento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let colecao of maioresOrcamentos">
+          <td>{{ colecao.nome }}</td>
+          <td>{{ colecao.responsavel }}</td>
+          <td>{{ colecao.modelos.length }}</td>
+          <td>R$ {{ colecao.orcamento }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
 </div>
