@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AuthService {
   private apiUrl = 'http://localhost:3000'; // altere esta URL para a URL do seu servidor JSON fake
@@ -41,4 +41,9 @@ export class AuthService {
   logout(): void {
     this.token = '';
   }
+
+  getUsuarios(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/usuarios`);
+  }
+  
 }

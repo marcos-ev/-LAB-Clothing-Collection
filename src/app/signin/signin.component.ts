@@ -23,14 +23,22 @@ export class SigninComponent implements OnInit {
 
   onSubmit(): void {
     if (this.loginForm.valid) {
+      console.log('Dados de login:', this.loginForm.value); // Adicione esta linha
       // Chama o serviço de autenticação e envia as informações de login para o servidor
-      this.authService.login(this.loginForm.value).subscribe((response) => {
-        console.log('Usuário autenticado com sucesso: ', response);
-        // Redireciona o usuário para a página de dashboard
-        this.router.navigate(['/dashboard']);
+      this.authService.getUsuarios().subscribe((usuarios) => {
+        const usuario = usuarios.find((u) => u.email === this.loginForm.value.email && u.password === this.loginForm.value.password);
+        if (usuario) {
+          this.authService.login(this.loginForm.value).subscribe((response) => {
+            console.log('Usuário autenticado com sucesso: ', response);
+            // Redireciona o usuário para a página de dashboard
+            this.router.navigate(['/dashboard']);
+          });
+        } else {
+          this.errorMessage = 'E-mail ou senha incorretos';
+        }
       }, (error) => {
-        console.log('Ocorreu um erro ao autenticar o usuário: ', error);
-        this.errorMessage = 'E-mail ou senha incorretos';
+        console.log('Ocorreu um erro ao obter a lista de usuários: ', error);
+        this.errorMessage = 'Não foi possível obter a lista de usuários';
       });
     }
   }
