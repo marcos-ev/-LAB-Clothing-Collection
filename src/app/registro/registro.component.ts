@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { AuthService } from '../auth.service'; // Importação do serviço AuthService
 
 @Component({
   selector: 'app-registro',
@@ -10,7 +11,7 @@ import { Router } from '@angular/router';
 export class RegistroComponent implements OnInit {
   registroForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder, private router: Router) {
+  constructor(private formBuilder: FormBuilder, private router: Router, private authService: AuthService) {
     this.registroForm = this.formBuilder.group({
       name: ['', [Validators.required]],
       company: ['', [Validators.required]],
@@ -25,8 +26,15 @@ export class RegistroComponent implements OnInit {
 
   onSubmit(): void {
     if (this.registroForm.valid) {
-      // Processa o envio do formulário
-      console.log('Formulário de registro enviado: ', this.registroForm.value);
+      this.authService.register(this.registroForm.value).subscribe(
+        () => {
+          // Redireciona o usuário para a página de login
+          this.router.navigate(['/signin']);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
     }
   }
 }
