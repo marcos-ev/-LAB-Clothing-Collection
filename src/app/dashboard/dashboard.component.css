@@ -1,6 +1,21 @@
 /* dashboard.component.css */
 @import 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css';
 
+*{
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+
+
+.dashboard {
+ 
+  height: 100vh;
+  background-color: #f3f3f3;
+  overflow: hidden;
+  
+}
+
 
 
 .dashboard-cards {
