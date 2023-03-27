@@ -12,9 +12,7 @@
 .card {
   align-items: center;
   display: flex;
-  max-width: 100%;
-  width: 30vh;
-  margin-left: 0;
+
 }
 
 .card-title {
