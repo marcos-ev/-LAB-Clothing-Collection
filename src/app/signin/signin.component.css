@@ -12,7 +12,7 @@
 .custom-card {
   position: relative;
   width: 420px;
-  height: 350px;
+  height: auto;
   margin: 0 auto 0 100% ;
   flex-direction: column;
   justify-content: center;
@@ -28,7 +28,7 @@
   width: 100%;
 }
 
-@media (max-width: 968px) {
+@media (max-width: 868px) {
   .col-md-6 {
     flex-basis: 100%;
     max-width: 100%;
