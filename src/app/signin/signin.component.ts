@@ -11,6 +11,7 @@ import { AuthService } from '../auth.service';
 export class SigninComponent implements OnInit {
   loginForm: FormGroup;
   errorMessage: string = '';
+  loginFailed: boolean = false;
 
   constructor(private formBuilder: FormBuilder, private router: Router, private authService: AuthService) {
     this.loginForm = this.formBuilder.group({
@@ -32,7 +33,7 @@ export class SigninComponent implements OnInit {
           // Redireciona o usuário para a página de dashboard
           this.router.navigate(['/dashboard']);
         } else {
-          this.errorMessage = 'E-mail ou senha incorretos';
+          this.loginFailed = true;
         }
       }, (error) => {
         console.log('Ocorreu um erro ao obter a lista de usuários: ', error);

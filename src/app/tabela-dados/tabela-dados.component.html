@@ -1,4 +1,4 @@
-<table class="table table-striped bg-white minha-tabela ">
+<table class="table table-striped bg-white minha-tabela">
   <thead>
     <tr>
       <th>Coleção</th>
@@ -9,7 +9,7 @@
   </thead>
   <tbody>
     <tr *ngFor="let dado of dados">
-      <td>{{ dado.colecao }}</td>
+      <td>{{ dado.nome }}</td>
       <td>{{ dado.responsavel }}</td>
       <td>{{ dado.modelos }}</td>
       <td>{{ dado.orcamento | currency: 'BRL' }}</td>
