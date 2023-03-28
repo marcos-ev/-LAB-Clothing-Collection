@@ -12,6 +12,7 @@ import { RegistroComponent } from './registro/registro.component';
 import { HeaderComponent } from './header/header.component';
 import { MenuLateralComponent } from './menu-lateral/menu-lateral.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { TabelaDadosComponent } from './tabela-dados/tabela-dados.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HeaderComponent,
     MenuLateralComponent,
     DashboardComponent,
+    TabelaDadosComponent,
  
   ],
   imports: [
