@@ -7,7 +7,7 @@ import { tap } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:3000'; // altere esta URL para a URL do seu servidor JSON fake
+  private apiUrl = 'http://localhost:3000'; 
   private token: string = '';
 
   constructor(private http: HttpClient) {}

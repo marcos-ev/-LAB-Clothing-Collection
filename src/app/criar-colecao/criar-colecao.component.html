@@ -1,1 +1,27 @@
-<p>criar-colecao works!</p>
+<form [formGroup]="criarColecaoForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="nomeColecao">Nome da coleção:</label>
+    <input type="text" class="form-control" formControlName="nomeColecao">
+  </div>
+  <div class="form-group">
+    <label for="responsavel">Responsável:</label>
+    <input type="text" class="form-control" formControlName="responsavel">
+  </div>
+  <div class="form-group">
+    <label for="estacao">Estação:</label>
+    <input type="text" class="form-control" formControlName="estacao">
+  </div>
+  <div class="form-group">
+    <label for="marca">Marca:</label>
+    <input type="text" class="form-control" formControlName="marca">
+  </div>
+  <div class="form-group">
+    <label for="orcamento">Orçamento:</label>
+    <input type="number" class="form-control" formControlName="orcamento">
+  </div>
+  <div class="form-group">
+    <label for="anoLancamento">Ano de lançamento:</label>
+    <input type="number" class="form-control" formControlName="anoLancamento">
+  </div>
+  <button type="submit" class="btn btn-primary">Salvar</button>
+</form>
