@@ -32,6 +32,8 @@
     </div>
   </div>
 
+
+
   <div class="tabela mt-5">
     <h3>Maiores orçamentos</h3>
     <table class="table table-striped bg-white">
@@ -47,7 +49,7 @@
         <tr *ngFor="let colecao of maioresOrcamentos">
           <td>{{ colecao.nome }}</td>
           <td>{{ colecao.responsavel }}</td>
-          <td>{{ colecao.modelos.length }}</td>
+          <td>{{ colecao.modelos ? colecao.modelos.length : 0 }}</td>
           <td>R$ {{ colecao.orcamento }}</td>
         </tr>
       </tbody>

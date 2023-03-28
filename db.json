@@ -1,103 +1,5 @@
 {
-  "signin": [
-    {
-      "email": "marcosev@gmail.com",
-      "password": "mevc0808",
-      "id": 1
-    },
-    {
-      "email": "marcosev@gmail.com",
-      "password": "mevc0808",
-      "id": 2
-    },
-    {
-      "email": "marcosev@gmail.com",
-      "password": "mevc0808",
-      "id": 3
-    },
-    {
-      "email": "marcosev@gmail.com",
-      "password": "mevc0808",
-      "id": 4
-    },
-    {
-      "email": "marcosev@gmail.com",
-      "password": "mevc0808",
-      "id": 5
-    },
-    {
-      "email": "marcosev@gmail.com",
-      "password": "mevc0808",
-      "id": 6
-    },
-    {
-      "email": "marcosev@gmail.com",
-      "password": "mevc0808",
-      "id": 7
-    },
-    {
-      "email": "marcosev@gmail.com",
-      "password": "mevc0808",
-      "id": 8
-    },
-    {
-      "email": "marcosev@gmail.com",
-      "password": "12345678",
-      "id": 9
-    },
-    {
-      "email": "marcosev@gmail.com",
-      "password": "12345678",
-      "id": 10
-    },
-    {
-      "email": "marcosev@gmail.com",
-      "password": "12345678",
-      "id": 11
-    },
-    {
-      "email": "marcosev@gmail.com",
-      "password": "12345678",
-      "id": 12
-    },
-    {
-      "email": "marcosev@gmail.com",
-      "password": "12345678",
-      "id": 13
-    },
-    {
-      "email": "marcosev@gmail.com",
-      "password": "12345678",
-      "id": 14
-    },
-    {
-      "email": "marcosev@gmail.com",
-      "password": "12345678",
-      "id": 15
-    },
-    {
-      "email": "marcosev@gmail.com",
-      "password": "12345678",
-      "id": 16
-    },
-    {
-      "email": "marcosev@gmail.com",
-      "password": "12345678",
-      "id": 17
-    }
-  ],
-  "modelos": [
-    {
-      "id": 1,
-      "nome": "Modelo 1",
-      "colecao": 1
-    },
-    {
-      "id": 2,
-      "nome": "Modelo 2",
-      "colecao": 1
-    }
-  ],
+  
   "colecoes": [
     {
       "id": 1,
@@ -108,6 +10,11 @@
       "nome": "Coleção 2"
     }
   ],
+
+  "colecoes": [
+
+
+  ],
   "usuarios": [
     {
       "name": "marcos eduardo virgili ",
@@ -117,33 +24,7 @@
       "password": "mevc0808",
       "confirmPassword": "mevc0808",
       "id": 1
-    },
-    {
-      "name": "marcos",
-      "company": "devinhouse",
-      "cnpj": "88070240",
-      "email": "marcosev@gmail.com",
-      "password": "12345678",
-      "confirmPassword": "12345678",
-      "id": 2
-    },
-    {
-      "name": "mariana",
-      "company": "engie",
-      "cnpj": "88070240",
-      "email": "marcosev@gmail.com",
-      "password": "12345678",
-      "confirmPassword": "12345678",
-      "id": 3
-    },
-    {
-      "name": "adwdaa",
-      "company": "dawda",
-      "cnpj": "123132131",
-      "email": "marcosev@gmail.com",
-      "password": "123456789",
-      "confirmPassword": "123456789",
-      "id": 4
     }
+
   ]
 }

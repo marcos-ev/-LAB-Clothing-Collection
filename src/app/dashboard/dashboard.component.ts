@@ -21,9 +21,13 @@ export class DashboardComponent {
 
       colecoes.forEach((c: any) => {
         colecao = c;
-        this.totalModelos += c.modelos.length;
-        this.orcamentoTotal += c.orcamento;
-      });
+        if (c.modelos) { // Verifica se a propriedade 'modelos' existe
+          this.totalModelos += c.modelos.length;
+        }
+        if (c.orcamento) { // Verifica se a propriedade 'orcamento' existe
+          this.orcamentoTotal += c.orcamento;
+        }
+      });  
 
       this.orcamentoMedio = this.orcamentoTotal / this.totalColecoes;
 
