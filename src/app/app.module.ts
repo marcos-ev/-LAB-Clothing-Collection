@@ -18,6 +18,7 @@ import { ModelosComponent } from './modelos/modelos.component';
 import { CriarColecaoComponent } from './criar-colecao/criar-colecao.component';
 import { CriarModeloComponent } from './criar-modelo/criar-modelo.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,8 +32,7 @@ import { CriarModeloComponent } from './criar-modelo/criar-modelo.component';
     ColecoesComponent,
     ModelosComponent,
     CriarColecaoComponent,
-    CriarModeloComponent,
- 
+    CriarModeloComponent
   ],
   imports: [
     BrowserModule,
