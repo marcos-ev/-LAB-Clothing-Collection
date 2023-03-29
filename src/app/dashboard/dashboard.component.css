@@ -5,16 +5,18 @@
   height: 93vh;
   background-color: #f3f3f3;
   overflow: hidden;
+  margin-top: auto;
 }
 
 .dashboard-cards {
   margin-left: 330px; /* Desconta a largura do menu lateral */
   margin-top: 80px; /* Define uma margem menor para alinhar com a tabela */
+  padding: 10px;
 }
 
 .card {
   margin: 50px;
-  margin-top: 10px;
+  margin-top: 0;
   background-color: #fff;
   margin-bottom: 20px; /* Adiciona margem inferior para alinhar com a tabela */
 }

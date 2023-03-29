@@ -3,28 +3,33 @@
     {
       "id": 1,
       "nome": "Modelo 1",
-      "colecao": [1]
+      "colecao": 1
     },
     {
       "id": 2,
       "nome": "Modelo 2",
-      "colecao": [1]
+      "colecao": 2
+    },
+    {
+      "id": 3,
+      "nome": "Modelo 3",
+      "colecao": 3
     }
   ],
   "colecoes": [
     {
       "id": 1,
       "nome": "Nike",
-      "responsavel": "Marcos",
+      "responsavel": "Eduardo",
       "modelos": [1],
       "orcamento": 15000
     },
     {
       "id": 2,
       "nome": "Adidas",
-      "responsavel": "Marcos",
+      "responsavel": "João",
       "modelos": [2],
-      "orcamento": 15000
+      "orcamento": 10000
     }
   ],
   "usuarios": [

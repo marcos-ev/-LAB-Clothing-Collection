@@ -1,0 +1,24 @@
+/* colecoes.component.css */
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css';
+
+.colecoes {
+  height: 93vh;
+  background-color: #f3f3f3;
+  overflow: hidden;
+  margin-top: auto;
+  margin-left: 330px; /* Desconta a largura do menu lateral */
+  margin-top: 80px; /* Define uma margem menor para alinhar com a tabela */
+  padding: 10px;
+}
+
+
+.colecoes h2 {
+  font-size: 1.1rem;
+  margin-top: 3rem;
+}
+
+.btn-primary {
+  margin-right: 20px;
+  width: auto;
+  padding: 10px;
+}

@@ -15,19 +15,15 @@ export class DashboardComponent {
   constructor(private http: HttpClient) {
     let colecoes: any[] = [];
     let colecao: any = {};
-    this.http.get('http://localhost:3000/colecoes').subscribe((data: any) => {
+    this.http.get('db.json').subscribe((data: any) => {
       colecoes = data;
       this.totalColecoes = colecoes.length;
 
       colecoes.forEach((c: any) => {
         colecao = c;
-        if (c.modelos) { // Verifica se a propriedade 'modelos' existe
-          this.totalModelos += c.modelos.length;
-        }
-        if (c.orcamento) { // Verifica se a propriedade 'orcamento' existe
-          this.orcamentoTotal += c.orcamento;
-        }
-      });  
+        this.totalModelos += c.modelos.length;
+        this.orcamentoTotal += c.orcamento;
+      });
 
       this.orcamentoMedio = this.orcamentoTotal / this.totalColecoes;
 

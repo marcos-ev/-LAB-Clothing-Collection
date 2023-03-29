@@ -29,7 +29,7 @@ export class TabelaDadosComponent {
     },
     {
       nome: 'Modelo 2',
-      responsavel: 'Marcos',
+      responsavel: 'Eduardo',
       id: 2
     }
   ];
@@ -43,7 +43,7 @@ export class TabelaDadosComponent {
   };
 
   constructor(private http: HttpClient) {
-    this.http.get('assets/db.json').subscribe(data => {
+    this.http.get('db.json').subscribe(data => {
       this.db = data as { modelos: Modelo[], colecoes: Colecao[] };
     });
   }
