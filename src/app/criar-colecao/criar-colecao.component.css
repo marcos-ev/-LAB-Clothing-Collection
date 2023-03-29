@@ -28,3 +28,14 @@
   
 }
 
+select.form-control:focus {
+  background-color: white;
+  color: blue;
+}
+
+select.form-control option:hover {
+  background-color: blue;
+  color: white;
+}
+
+
