@@ -24,7 +24,18 @@ export class RegistroComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    // Adiciona um listener para o evento de envio do formulário
+    const form = document.querySelector('.needs-validation') as HTMLFormElement;
+    form.addEventListener('submit', (event) => {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+        this.markFormControlsAsTouched(form);
+      }
+      form.classList.add('was-validated');
+    }, false);
+  }
 
   onSubmit(): void {
     if (this.registroForm.valid) {
@@ -37,7 +48,11 @@ export class RegistroComponent implements OnInit {
         },
         (error) => {
           // Exibe a mensagem de erro
-          this.errorMessage = 'Erro ao realizar o registro. Por favor, tente novamente.';
+          if (error && error.error && error.error.message === 'Este e-mail já está cadastrado.') {
+            this.errorMessage = 'Este e-mail já está cadastrado.';
+          } else {
+            this.errorMessage = 'Este e-mail já está cadastrado.';
+          }
           this.successMessage = undefined;
           console.log(error);
         }
@@ -47,5 +62,19 @@ export class RegistroComponent implements OnInit {
       this.errorMessage = 'Por favor, preencha todos os campos corretamente.';
       this.successMessage = undefined;
     }
+  }
+
+  
+  markFormControlsAsTouched(form: HTMLFormElement) {
+    // Itera sobre todos os campos do formulário e os marca como tocados
+    Array.from(form.querySelectorAll('.required')).forEach(control => {
+      if (control instanceof HTMLInputElement) {
+        control.classList.add('is-invalid');
+        if (!control.validity.valid) {
+          const errorElement = control.nextElementSibling as HTMLElement;
+          errorElement.textContent = control.validationMessage;
+        }
+      }
+    });
   }
 }
