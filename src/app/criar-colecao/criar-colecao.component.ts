@@ -20,6 +20,7 @@ export class CriarColecaoComponent {
       anoLancamento: ['', Validators.required],
     });
   }
+  
 
   onSubmit() {
     this.dadosService.addDado({
