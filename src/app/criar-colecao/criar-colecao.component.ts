@@ -1,10 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { DadosService } from '../dados.service';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
-
 
 @Component({
   selector: 'app-criar-colecao',
@@ -24,17 +20,13 @@ export class CriarColecaoComponent {
       anoLancamento: ['', Validators.required],
     });
   }
-  
 
   onSubmit() {
-    this.dadosService.addDado({
-      nome: this.criarColecaoForm.value.nomeColecao,
-      responsavel: this.criarColecaoForm.value.responsavel,
-      estacao: this.criarColecaoForm.value.estacao,
-      marca: this.criarColecaoForm.value.marca,
-      orcamento: this.criarColecaoForm.value.orcamento,
-      anoLancamento: this.criarColecaoForm.value.anoLancamento
-    }, 'colecoes');
-    this.criarColecaoForm.reset();
+    this.dadosService.addColecao(this.criarColecaoForm.value).subscribe(() => {
+      console.log('Dados salvos com sucesso!');
+      this.criarColecaoForm.reset();
+    }, error => {
+      console.log('Erro ao salvar dados:', error);
+    });
   }
 }

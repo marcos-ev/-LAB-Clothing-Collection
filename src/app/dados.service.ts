@@ -40,5 +40,8 @@ export class DadosService {
       switchMap((data: any) => this.http.put(this.apiUrl, data))
     );
   } 
-  
+  addColecao(colecao: any): Observable<any> {
+    return this.http.post<any>(`${this.apiUrl}/colecoes`, colecao);
+  }
 }
+
