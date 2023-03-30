@@ -2,6 +2,10 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { DadosService } from '../dados.service';
 import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-criar-modelo',
@@ -37,4 +41,6 @@ export class CriarModeloComponent {
   cancelar() {
     this.router.navigate(['/modelos']);
   }
+
+  
 }
