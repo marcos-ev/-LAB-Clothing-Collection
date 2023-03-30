@@ -45,69 +45,7 @@
       "password": "mevc0808",
       "confirmPassword": "mevc0808",
       "id": 1
-    },
-    {
-      "name": "marcos",
-      "company": "devinhouse",
-      "cnpj": "88070240",
-      "email": "marcosev@gmail.com",
-      "password": "12345678",
-      "confirmPassword": "12345678",
-      "id": 2
-    },
-    {
-      "name": "mariana",
-      "company": "engie",
-      "cnpj": "88070240",
-      "email": "marcosev@gmail.com",
-      "password": "12345678",
-      "confirmPassword": "12345678",
-      "id": 3
-    },
-    {
-      "name": "adwdaa",
-      "company": "dawda",
-      "cnpj": "123132131",
-      "email": "marcosev@gmail.com",
-      "password": "123456789",
-      "confirmPassword": "123456789",
-      "id": 4
-    },
-    {
-      "name": "131",
-      "company": "13",
-      "cnpj": "123",
-      "email": "marcosev@gmail.com",
-      "password": "12345678",
-      "confirmPassword": "123",
-      "id": 5
-    },
-    {
-      "name": "3",
-      "company": "adad",
-      "cnpj": "1231",
-      "email": "marcosev@gmail.com",
-      "password": "123",
-      "confirmPassword": "1324",
-      "id": 6
-    },
-    {
-      "name": "11",
-      "company": "312",
-      "cnpj": "1312",
-      "email": "marcosev@gmail.com",
-      "password": "12345678",
-      "confirmPassword": "123",
-      "id": 7
-    },
-    {
-      "name": "marcos",
-      "company": "devinhouse",
-      "cnpj": "1231213",
-      "email": "marcosev@gmail.com",
-      "password": "1234",
-      "confirmPassword": "1234",
-      "id": 8
     }
+   
   ]
 }
