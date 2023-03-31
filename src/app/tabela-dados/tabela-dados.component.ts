@@ -20,45 +20,15 @@ interface Colecao {
   styleUrls: ['./tabela-dados.component.css']
 })
 export class TabelaDadosComponent {
-
-  dados = [
-    {
-      nome: 'Modelo 1',
-      responsavel: 'Marcos',
-      id: 1
-    },
-    {
-      nome: 'Modelo 2',
-      responsavel: 'Eduardo',
-      id: 2
-    }
-  ];
-
-  db: {
-    modelos: Modelo[],
-    colecoes: Colecao[]
-  } = {
-    modelos: [],
-    colecoes: []
-  };
+  colecoes: Colecao[] = [];
 
   constructor(private http: HttpClient) {
-    this.http.get('db.json').subscribe(data => {
-      this.db = data as { modelos: Modelo[], colecoes: Colecao[] };
+    this.getColecoes();
+  }
+
+  getColecoes() {
+    this.http.get<any>('http://localhost:3000/colecoes').subscribe(data => {
+      this.colecoes = data.colecoes;
     });
-  }
-
-  getModeloColecao(modelo: Modelo): Colecao | undefined {
-    return this.db.colecoes.find(c => c.modelos.includes(modelo.id));
-  }
-
-  getModeloColecaoNome(modelo: Modelo): string {
-    const colecao = this.getModeloColecao(modelo);
-    return colecao ? colecao.nome : '';
-  }
-
-  getModeloColecaoResponsavel(modelo: Modelo): string {
-    const colecao = this.getModeloColecao(modelo);
-    return colecao ? colecao.responsavel : '';
   }
 }

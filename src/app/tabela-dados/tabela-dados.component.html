@@ -8,7 +8,11 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let dado of dados">
-      <td>{{ dado.nome }}</td>
-      <td>{{ dado.responsavel }}</td>
-     
+    <tr *ngFor="let colecao of colecoes">
+      <td>{{ colecao.nome }}</td>
+      <td>{{ colecao.responsavel }}</td>
+      <td>{{ colecao.modelos.join(', ') }}</td>
+      <td>{{ colecao.orcamento }}</td>
+    </tr>
+  </tbody>
+</table>

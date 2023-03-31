@@ -41,6 +41,14 @@ export class DadosService {
     );
   } 
   addColecao(colecao: any): Observable<any> {
-    return this.http.post<any>(`${this.apiUrl}/colecoes`, colecao);
+    return this.getDados().pipe(
+      switchMap((data: any) => {
+        const novoId = data.colecoes.length + 1;
+        colecao.id = novoId;
+        data.colecoes.push(colecao);
+        return this.http.put('/colecoes', data);
+      })
+    );
   }
-}
+ }  
+  

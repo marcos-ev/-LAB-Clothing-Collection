@@ -16,26 +16,7 @@
       "colecao": 3
     }
   ],
-  "colecoes": [
-    {
-      "id": 1,
-      "nome": "Nike",
-      "responsavel": "Eduardo",
-      "modelos": [
-        1
-      ],
-      "orcamento": 15000
-    },
-    {
-      "id": 2,
-      "nome": "Adidas",
-      "responsavel": "João",
-      "modelos": [
-        2
-      ],
-      "orcamento": 10000
-    }
-  ],
+  "colecoes": [],
   "usuarios": [
     {
       "name": "marcos eduardo virgili ",
@@ -54,6 +35,24 @@
       "password": "mevc0808",
       "confirmPassword": "mevc0808",
       "id": 2
+    },
+    {
+      "name": "edaurdo",
+      "company": "devinhouse2",
+      "cnpj": "88070240",
+      "email": "emailteste@gmail.com",
+      "password": "mevc0808",
+      "confirmPassword": "mevc0808",
+      "id": 3
+    },
+    {
+      "name": "teste",
+      "company": "teste",
+      "cnpj": "132132131232",
+      "email": "teste2@gmail.com",
+      "password": "teste",
+      "confirmPassword": "teste",
+      "id": 4
     }
   ]
 }
