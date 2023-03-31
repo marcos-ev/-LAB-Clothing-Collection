@@ -1,22 +1,25 @@
 {
-  "modelos": [
+  "modelos": [],
+  "colecoes": [
     {
-      "id": 1,
-      "nome": "Modelo 1",
-      "colecao": 1
+      "nomeColecao": "1",
+      "responsavel": "1",
+      "estacao": "Verão",
+      "marca": "1",
+      "orcamento": 1,
+      "anoLancamento": 1,
+      "id": 1
     },
     {
-      "id": 2,
-      "nome": "Modelo 2",
-      "colecao": 2
-    },
-    {
-      "id": 3,
-      "nome": "Modelo 3",
-      "colecao": 3
+      "nomeColecao": "3",
+      "responsavel": "3",
+      "estacao": "Verão",
+      "marca": "13",
+      "orcamento": 3,
+      "anoLancamento": 3,
+      "id": 2
     }
   ],
-  "colecoes": [],
   "usuarios": [
     {
       "name": "marcos eduardo virgili ",
@@ -37,7 +40,7 @@
       "id": 2
     },
     {
-      "name": "edaurdo",
+      "name": "eduardo",
       "company": "devinhouse2",
       "cnpj": "88070240",
       "email": "emailteste@gmail.com",

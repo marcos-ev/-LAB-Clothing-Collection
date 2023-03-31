@@ -1,32 +1,38 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { DadosService } from '../dados.service';
+import { ColecaoService } from '../colecao.service';
 
 @Component({
   selector: 'app-criar-colecao',
   templateUrl: './criar-colecao.component.html',
   styleUrls: ['./criar-colecao.component.css']
 })
-export class CriarColecaoComponent {
-  criarColecaoForm: FormGroup;
+export class CriarColecaoComponent implements OnInit {
+  criarColecaoForm!: FormGroup;
 
-  constructor(private formBuilder: FormBuilder, private dadosService: DadosService) {
+  constructor(private formBuilder: FormBuilder, private dadosService: DadosService, private colecaoService: ColecaoService, private http: HttpClient) { }
+
+  ngOnInit() {
     this.criarColecaoForm = this.formBuilder.group({
       nomeColecao: ['', Validators.required],
       responsavel: ['', Validators.required],
       estacao: ['', Validators.required],
       marca: ['', Validators.required],
       orcamento: ['', Validators.required],
-      anoLancamento: ['', Validators.required],
+      anoLancamento: ['', Validators.required]
     });
   }
 
   onSubmit() {
-    this.dadosService.addColecao(this.criarColecaoForm.value).subscribe(() => {
-      console.log('Dados salvos com sucesso!');
-      this.criarColecaoForm.reset();
-    }, error => {
-      console.log('Erro ao salvar dados:', error);
+    console.log(this.criarColecaoForm.value);
+  
+  
+    this.http.post('http://localhost:3000/colecoes', this.criarColecaoForm.value).subscribe((dados) => {
+      console.log(dados);
     });
-  }
-}
+  };
+  
+    
+ }
