@@ -44,4 +44,3 @@ export class DadosService {
     return this.http.post<any>(`${this.apiUrl}/colecoes`, colecao);
   }
 }
-

@@ -45,7 +45,15 @@
       "password": "mevc0808",
       "confirmPassword": "mevc0808",
       "id": 1
+    },
+    {
+      "name": "marcos teste",
+      "company": "devinhouse",
+      "cnpj": "88070240",
+      "email": "costamev@saude.sc.gov.br",
+      "password": "mevc0808",
+      "confirmPassword": "mevc0808",
+      "id": 2
     }
-   
   ]
 }

@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { tap } from 'rxjs/operators';
+import { switchMap, tap } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root',
@@ -19,6 +19,8 @@ export class AuthService {
         if (emailExists) {
           throw new Error('Este e-mail já está cadastrado.');
         }
+      }),
+      switchMap(() => {
         return this.http.post(`${this.apiUrl}/usuarios`, data).pipe(
           tap((response: any) => {
             if (response && response.token) {
