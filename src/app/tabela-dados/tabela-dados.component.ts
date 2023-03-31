@@ -5,8 +5,9 @@ interface Colecao {
   id: number;
   nomeColecao: string;
   responsavel: string;
-  modelos: string[];
+  modelos: number;
   orcamento: number;
+  estacao: string;
 }
 
 @Component({
@@ -25,7 +26,8 @@ export class TabelaDadosComponent implements OnInit {
   }
 
   buscarDados() {
-    this.http.get<any>(this.endpoint).subscribe(data => {
+    this.http.get<any>(this.endpoint).subscribe(data =>
+       {
       this.colecoes = data;
     });
   }

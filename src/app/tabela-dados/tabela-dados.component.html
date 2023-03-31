@@ -3,6 +3,7 @@
     <tr>
       <th>Coleção</th>
       <th>Responsável</th>
+      <th>Estação-Lançamento</th>
       <th>Modelos</th>
       <th>Orçamento</th>
     </tr>
@@ -11,6 +12,7 @@
     <tr *ngFor="let colecao of colecoes">
       <td>{{ colecao.nomeColecao }}</td>
       <td>{{ colecao.responsavel }}</td>
+      <td>{{ colecao.estacao }}</td>
       <td>{{ colecao.modelos }}</td>
       <td>{{ colecao.orcamento }}</td>
     </tr>
