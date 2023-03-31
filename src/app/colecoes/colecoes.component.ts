@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { DadosService } from '../dados.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-colecoes',
@@ -10,7 +11,7 @@ import { DadosService } from '../dados.service';
 export class ColecoesComponent implements OnInit {
   colecoes: any[] = [];
 
-  constructor(private dadosService: DadosService, private router: Router) { }
+  constructor(private dadosService: DadosService, private router: Router,private http: HttpClient) { }
 
   ngOnInit(): void {
     this.getColecoes();

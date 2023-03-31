@@ -2,22 +2,49 @@
   "modelos": [],
   "colecoes": [
     {
-      "nomeColecao": "1",
-      "responsavel": "1",
+      "nomeColecao": "roupa de verão",
+      "responsavel": "Marcos",
       "estacao": "Verão",
-      "marca": "1",
-      "orcamento": 1,
-      "anoLancamento": 1,
+      "marca": "Nike",
+      "orcamento": 9500 ,
+      "anoLancamento": 2023,
       "id": 1
     },
     {
-      "nomeColecao": "3",
-      "responsavel": "3",
+      "nomeColecao": "Roupa de inverno",
+      "responsavel": "Eduardo",
       "estacao": "Verão",
-      "marca": "13",
-      "orcamento": 3,
-      "anoLancamento": 3,
+      "marca": "Puma",
+      "orcamento": 3500,
+      "anoLancamento": 2022,
       "id": 2
+    },
+    {
+      "nomeColecao": "Primavera 2023",
+      "responsavel": "Joana",
+      "estacao": "Primavera",
+      "marca": "Adidas",
+      "orcamento": 8000,
+      "anoLancamento": 2023,
+      "id": 3
+    },
+    {
+      "nomeColecao": "Inverno Fashion",
+      "responsavel": "Lucas",
+      "estacao": "Inverno",
+      "marca": "Gucci",
+      "orcamento": 12000,
+      "anoLancamento": 2022,
+      "id": 4
+    },
+    {
+      "nomeColecao": "Moda Praia 2022",
+      "responsavel": "Carla",
+      "estacao": "Verão",
+      "marca": "Fendi",
+      "orcamento": 10000,
+      "anoLancamento": 2022,
+      "id": 5
     }
   ],
   "usuarios": [

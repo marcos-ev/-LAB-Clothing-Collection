@@ -1,16 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
-interface Modelo {
-  id: number;
-  nome: string;
-}
 
 interface Colecao {
   id: number;
-  nome: string;
+  nomeColecao: string;
   responsavel: string;
-  modelos: number[];
+  modelos: string[];
   orcamento: number;
 }
 
@@ -19,16 +14,19 @@ interface Colecao {
   templateUrl: './tabela-dados.component.html',
   styleUrls: ['./tabela-dados.component.css']
 })
-export class TabelaDadosComponent {
+export class TabelaDadosComponent implements OnInit {
   colecoes: Colecao[] = [];
+  endpoint = 'http://localhost:3000/colecoes';
 
-  constructor(private http: HttpClient) {
-    this.getColecoes();
+  constructor(private http: HttpClient) { }
+
+  ngOnInit() {
+    this.buscarDados();
   }
 
-  getColecoes() {
-    this.http.get<any>('http://localhost:3000/colecoes').subscribe(data => {
-      this.colecoes = data.colecoes;
+  buscarDados() {
+    this.http.get<any>(this.endpoint).subscribe(data => {
+      this.colecoes = data;
     });
   }
 }
