@@ -10,14 +10,15 @@
     </tr>
   </thead>
   <tbody>
+    
     <tr *ngFor="let modelo of modelos">
-      <td><a [routerLink]="['/editar-modelo']">{{ modelo.nomeModelo}}</a></td>
       <td>{{ modelo.id }}</td>
-      <td>{{ modelo.nomeModelo }}</td>
+      <td><a [routerLink]="['/editar-modelo']">{{ modelo.nomeModelo}}</a></td>
       <td>{{ modelo.responsavel }}</td>
       <td>{{ modelo.Selecionarcolecao }}</td>
       <td>{{ modelo.possuiBordas }}</td>
       <td>{{ modelo.possuiEstampa }}</td>
+      
     </tr>
   </tbody>
 </table>
