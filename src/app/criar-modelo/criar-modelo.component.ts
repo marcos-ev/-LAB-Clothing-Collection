@@ -30,7 +30,8 @@ export class CriarModeloComponent implements OnInit {
       Selecionarcolecao: ['', Validators.required],
       responsavel: ['', Validators.required],
       possuiBordas: ['', Validators.required],
-      possuiEstampa: ['', Validators.required]
+      possuiEstampa: ['', Validators.required],
+      nomeModelo: ['', Validators.required]
     });
   }
   

@@ -16,6 +16,7 @@ import { ColecoesComponent } from './colecoes/colecoes.component';
 import { ModelosComponent } from './modelos/modelos.component';
 import { CriarColecaoComponent } from './criar-colecao/criar-colecao.component';
 import { CriarModeloComponent } from './criar-modelo/criar-modelo.component';
+import { TabelaModeloComponent } from './tabela-modelo/tabela-modelo.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { CriarModeloComponent } from './criar-modelo/criar-modelo.component';
     ColecoesComponent,
     ModelosComponent,
     CriarColecaoComponent,
-    CriarModeloComponent
+    CriarModeloComponent,
+    TabelaModeloComponent
   ],
   imports: [
     BrowserModule,

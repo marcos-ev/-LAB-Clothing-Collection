@@ -2,11 +2,13 @@
   "modelos": [
     {
       "Selecionarcolecao": "Roupa de inverno",
-      "responsavel": "Camila",
-      "possuiBordas": "Não",
+      "responsavel": "Marcos",
+      "possuiBordas": "Sim",
       "possuiEstampa": "Não",
+      "nomeModelo": "Calça Skinny 001",
       "id": 1
     }
+  
   ],
   "colecoes": [
     {
