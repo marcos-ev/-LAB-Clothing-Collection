@@ -6,9 +6,27 @@
       "possuiBordas": "Sim",
       "possuiEstampa": "Não",
       "nomeModelo": "Calça Skinny 001",
+      "tipoModelo": "Calça",
       "id": 1
+    },
+    {
+      "Selecionarcolecao": "roupa de verão",
+      "responsavel": "Carlos",
+      "possuiBordas": "Sim",
+      "possuiEstampa": "Sim",
+      "nomeModelo": "Biquini Top 02",
+      "tipoModelo": "biquini",
+      "id": 2
+    },
+    {
+      "Selecionarcolecao": "Primavera 2023",
+      "responsavel": "Mariana",
+      "possuiBordas": "Sim",
+      "possuiEstampa": "Sim",
+      "nomeModelo": "Polo Balmain",
+      "tipoModelo": "Camisa Polo",
+      "id": 3
     }
-  
   ],
   "colecoes": [
     {
@@ -55,6 +73,15 @@
       "orcamento": 10000,
       "anoLancamento": 2022,
       "id": 5
+    },
+      {
+      "nomeColecao": "Moletons Inverno 2023",
+      "responsavel": "Yuri",
+      "estacao": "Inverno",
+      "marca": "Balanciaga",
+      "orcamento": 85000,
+      "anoLancamento": 2025,
+      "id": 7
     }
   ],
   "usuarios": [
