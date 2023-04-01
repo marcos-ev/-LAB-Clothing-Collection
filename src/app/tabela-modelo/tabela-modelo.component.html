@@ -11,6 +11,7 @@
   </thead>
   <tbody>
     <tr *ngFor="let modelo of modelos">
+      <td><a [routerLink]="['/editar-modelo']">{{ modelo.nomeModelo}}</a></td>
       <td>{{ modelo.id }}</td>
       <td>{{ modelo.nomeModelo }}</td>
       <td>{{ modelo.responsavel }}</td>

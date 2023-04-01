@@ -10,7 +10,7 @@
   </thead>
   <tbody>
     <tr *ngFor="let colecao of colecoes">
-      <td>{{ colecao.nomeColecao }}</td>
+      <td><a [routerLink]="['/editar-colecao']">{{ colecao.nomeColecao }}</a></td>
       <td>{{ colecao.responsavel }}</td>
       <td>{{ colecao.estacao }}</td>
       <td>{{ colecao.modelos }}</td>

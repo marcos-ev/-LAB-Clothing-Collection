@@ -17,7 +17,8 @@ import { ModelosComponent } from './modelos/modelos.component';
 import { CriarColecaoComponent } from './criar-colecao/criar-colecao.component';
 import { CriarModeloComponent } from './criar-modelo/criar-modelo.component';
 import { TabelaModeloComponent } from './tabela-modelo/tabela-modelo.component';
-
+import { EditarColecaoComponent } from './editar-colecao/editar-colecao.component';
+import { EditarModeloComponent } from './editar-modelo/editar-modelo.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,9 @@ import { TabelaModeloComponent } from './tabela-modelo/tabela-modelo.component';
     ModelosComponent,
     CriarColecaoComponent,
     CriarModeloComponent,
-    TabelaModeloComponent
+    TabelaModeloComponent,
+    EditarColecaoComponent,
+    EditarModeloComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,6 @@ import { TabelaModeloComponent } from './tabela-modelo/tabela-modelo.component';
     NgbModule,
     HttpClientModule // Adicionado aqui
   ],
-  
   providers: [{ provide: 'cache', useValue: false }],
   bootstrap: [AppComponent]
 })

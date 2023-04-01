@@ -1,0 +1,48 @@
+<app-header></app-header>
+<app-menu-lateral></app-menu-lateral>
+
+<form [formGroup]="criarModeloForm" (ngSubmit)="onSubmit()" class="form-modelo form-row">
+  <div class="col-md-12 mb-5">
+    <h2 class="text-left">Editar Modelo</h2>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="nomeModelo">Nome do Modelo:</label>
+    <input type="text" class="form-control" formControlName="nomeModelo">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="tipoModelo">Tipo do Modelo:</label>
+    <input type="text" class="form-control" formControlName="tipoModelo">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="Selecionarcolecao">Selecionar Coleção:</label>
+    <select class="form-control" formControlName="Selecionarcolecao">
+      <option value="">Selecione uma opção</option>
+      <option *ngFor="let opcao of opcoesSelecionarColecao" [value]="opcao.value">{{ opcao.label }}</option>
+    </select>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="responsavel">Responsável pelo Modelo:</label>
+    <input type="text" class="form-control" formControlName="responsavel">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="possuiBordas">Possui Bordas?</label>
+    <select class="form-control" formControlName="possuiBordas">
+      <option value="">Selecione uma opção</option>
+      <option value="Sim">Sim</option>
+      <option value="Não">Não</option>
+    </select>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="possuiEstampa">Possui Estampa?</label>
+    <select class="form-control" formControlName="possuiEstampa">
+      <option value="">Selecione uma opção</option>
+      <option value="Sim">Sim</option>
+      <option value="Não">Não</option>
+    </select>
+  </div>
+
+  <div class="botoes mr-5">
+    <button routerLink="/modelos" type="button" class="btn btn-danger ml-3">Cancelar</button>
+    <button type="submit" class="btn btn-primary mr-3">Salvar</button>
+  </div>
+</form>

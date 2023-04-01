@@ -7,7 +7,9 @@ import { RegistroComponent } from './registro/registro.component';
 import { ColecoesComponent } from './colecoes/colecoes.component';
 import { CriarColecaoComponent } from './criar-colecao/criar-colecao.component';
 import { ModelosComponent } from './modelos/modelos.component';
-import { CriarModeloComponent } from './criar-modelo/criar-modelo.component'; // Importe o componente CriarModelo aqui
+import { CriarModeloComponent } from './criar-modelo/criar-modelo.component';
+import { EditarColecaoComponent } from './editar-colecao/editar-colecao.component';
+import { EditarModeloComponent } from './editar-modelo/editar-modelo.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/signin', pathMatch: 'full' },
@@ -18,7 +20,9 @@ const routes: Routes = [
   { path: 'colecoes', component: ColecoesComponent },
   { path: 'criar-colecao', component: CriarColecaoComponent },
   { path: 'modelos', component: ModelosComponent },
-  { path: 'criar-modelo', component: CriarModeloComponent } // Adicione a rota para CriarModelo aqui
+  { path: 'criar-modelo', component: CriarModeloComponent },
+  { path: 'editar-colecao', component: EditarColecaoComponent},
+  { path: 'editar-modelo', component: EditarModeloComponent},
 ];
 
 @NgModule({
