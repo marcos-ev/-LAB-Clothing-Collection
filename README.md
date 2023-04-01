@@ -44,6 +44,6 @@ https://github.com/marcos-ev/-LAB-Clothing-Collection
 
 ### DEPLOY
 
-Foi feito deploy pelo Vercel, copie o link abaixo e cole no seu navegador
+Foi feito deploy pelo Vercel, copie o link abaixo e cole no seu navegador (apenas em desktop)
 
 ```https://lab-clothing-collection-mr7g.vercel.app/signin```
