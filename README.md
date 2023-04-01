@@ -41,3 +41,7 @@ As tabelas são editáveis e possuem um botão de "Criar Coleção" ou "Criar Mo
 ### Repositório no GitHub
 
 https://github.com/marcos-ev/-LAB-Clothing-Collection
+
+### DEPLOY
+
+```https://lab-clothing-collection-mr7g.vercel.app/signin```
