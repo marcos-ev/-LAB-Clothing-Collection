@@ -1,12 +1,20 @@
 {
-  "modelos": [],
+  "modelos": [
+    {
+      "Selecionarcolecao": "Roupa de inverno",
+      "responsavel": "Camila",
+      "possuiBordas": "Não",
+      "possuiEstampa": "Não",
+      "id": 1
+    }
+  ],
   "colecoes": [
     {
       "nomeColecao": "roupa de verão",
       "responsavel": "Marcos",
       "estacao": "Verão",
       "marca": "Nike",
-      "orcamento": 9500 ,
+      "orcamento": 9500,
       "anoLancamento": 2023,
       "id": 1
     },

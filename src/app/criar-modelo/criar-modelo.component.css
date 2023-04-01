@@ -14,10 +14,10 @@
   padding: 10px;
 }
 
-
 .btn {
   margin-top: 60px;
   float: right;
+  margin-right: 10px;
 }
 
 select.form-control:focus {

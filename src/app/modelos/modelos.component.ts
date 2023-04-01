@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
-import { DadosService } from '../dados.service';
 
 @Component({
   selector: 'app-modelos',
@@ -10,21 +10,22 @@ import { DadosService } from '../dados.service';
 export class ModelosComponent implements OnInit {
   modelos: any[] = [];
 
-  constructor(private dadosService: DadosService, private router: Router) { }
+  constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit(): void {
     this.getModelos();
   }
 
   getModelos(): void {
-    this.dadosService.getDados().subscribe((data: any) => {
-      this.modelos = data.modelos;
+    this.http.get<any[]>('http://localhost:3000/modelos').subscribe(data => {
+      this.modelos = data;
     });
   }
 
   deleteModelo(id: number): void {
-    this.dadosService.deleteDado(id, 'modelos');
-    this.getModelos();
+    this.http.delete(`http://localhost:3000/modelos/${id}`).subscribe(() => {
+      this.getModelos();
+    });
   }
 
   criarModelo(): void {
