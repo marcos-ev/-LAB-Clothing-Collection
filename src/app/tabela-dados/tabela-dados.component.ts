@@ -26,9 +26,13 @@ export class TabelaDadosComponent implements OnInit {
   }
 
   buscarDados() {
-    this.http.get<any>(this.endpoint).subscribe(data =>
-       {
+    this.http.get<any>(this.endpoint).subscribe(data => {
       this.colecoes = data;
+      this.ordenarPorMaiorOrcamento();
     });
+  }
+
+  ordenarPorMaiorOrcamento() {
+    this.colecoes.sort((a, b) => b.orcamento - a.orcamento);
   }
 }
